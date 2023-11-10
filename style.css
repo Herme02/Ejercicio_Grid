@@ -1,0 +1,96 @@
+
+#container{
+background-color: #ffffff;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-rows: 150px 180px 480px auto;
+        grid-template-areas: "header header header header header header header header header header header header header header header header"
+                            ". titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo ."
+                            ". . foto1 foto1 foto1 foto1 foto2 foto2 foto2 foto2 foto3 foto3 foto3 foto3 . ."
+                            ". . precio1 precio1 precio1 precio1 precio2 precio2 precio2 precio2 precio3 precio3 precio3 precio3 . .";  
+}
+
+.header{
+    background-color: #e9e9e9;
+    grid-area:header;
+    text-align: center;
+    
+    
+}
+
+.titulo{
+    background-color: #293f58;
+    grid-area:titulo;
+    text-align: center;
+    
+    
+}
+
+.foto1{
+    background-color: #022943;
+    grid-area:foto1;
+    text-align: center;
+    
+}
+
+.foto2{
+    background-color: #022943;
+    grid-area:foto2;
+    text-align: center;
+    
+}
+
+.foto3{
+    background-color: #022943;
+    grid-area:foto3;
+    text-align: center;
+    
+}
+
+.precio1{
+    background-color: #f4f4f4;
+    grid-area:precio1;
+    text-align: center;
+    
+    
+}
+
+.precio2{
+    background-color: #f4f4f4;
+    grid-area:precio2;
+    text-align: center;
+   
+}
+
+.precio3{
+    background-color: #f4f4f4;
+    grid-area:precio3;
+    text-align: center;
+    
+    
+}
+
+@media screen and (max-width: 801px) {
+    #container{
+        background-color: #ffffff;
+                
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 15px;
+                grid-template-rows: 150px 180px 480px 100px 480px 100px 480px 100px;
+                grid-template-areas: "header"
+                                    "titulo"
+                                    "foto1"
+                                    "precio1" 
+                                    "foto2"
+                                    "precio2" 
+                                    "foto3"
+                                    "precio3" 
+        }
+}
+
+
+
+
